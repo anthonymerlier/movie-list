@@ -21,8 +21,9 @@
   }
   img {
     border-radius: 120px;
-    width: 170px;
-    height: 170px;
+    width: 145px;
+    height: 145px;
     object-fit: cover;
+    border: 2px solid wheat;
   }
 </style>

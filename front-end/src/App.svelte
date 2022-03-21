@@ -1,5 +1,5 @@
 <script>
-  import ActorsList from "./components/ActorsList.svelte";
+  import ActorsList from "./components/Actor/ActorsList.svelte";
 </script>
 
 <main>

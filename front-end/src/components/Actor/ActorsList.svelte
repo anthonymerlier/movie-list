@@ -25,7 +25,7 @@
   </div>
   <div class="blockActor">
     {#each allActors as actor}
-      <Actor {actor} nbPerLine={3} />
+      <Actor {actor} nbPerLine={4} />
     {/each}
   </div>
 </div>
