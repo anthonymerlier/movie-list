@@ -1,10 +1,9 @@
 <script>
-  import ActorsList from "./components/Actor/ActorsList.svelte";
+  import { Router } from "@sveltech/routify";
+  import { routes } from "@sveltech/routify/tmp/routes";
 </script>
 
-<main>
-  <ActorsList />
-</main>
+<Router {routes} />
 
 <style>
   :global(body) {

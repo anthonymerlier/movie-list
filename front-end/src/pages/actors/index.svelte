@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { getActors } from "../../models/actorsController";
-
+  import { url } from "@sveltech/routify";
   let allActors = [];
 
   onMount(async () => {
@@ -21,7 +21,11 @@
             actor.attributes.photo.data.attributes.url}
           alt=""
         />
-        <p>{actor.attributes.first_name} {actor.attributes.last_name}</p>
+        <p>
+          <a href={$url("/actors/" + actor.id)}
+            >{actor.attributes.first_name} {actor.attributes.last_name}</a
+          >
+        </p>
       </div>
     {/each}
   </div>
